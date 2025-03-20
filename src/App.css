@@ -94,7 +94,7 @@ input {
   outline: none;
   border: 5px solid var(--secondary-color);
   font-size: 30px;
-  color: var(--primary-color);
+  color: white;
   margin-left: 20px;
 }
 
@@ -104,7 +104,7 @@ textarea {
   outline: none;
   border: 5px solid var(--secondary-color);
   font-size: 30px;
-  color: var(--primary-color);
+  color: white;
   margin-left: 20px;
   padding: 20px;
 }
@@ -127,6 +127,7 @@ label {
   display: flex;
   align-items: center;
   font-size: 40px;
+  color: black;
 }
 
 .post-form {
@@ -137,6 +138,7 @@ label {
 
 form h1 {
   margin-bottom: 20px;
+  color: black;
 }
 
 .form-actions {

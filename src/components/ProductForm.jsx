@@ -35,14 +35,13 @@ function ProductForm() {
     } else if (!isValidEmail(email)) {
       newErrors.email = "Invalid email format.";
     }
-    console.log(Object.keys(newErrors).length);
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+    return Object.keys(newErrors).length
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    if (!validateForm()) {
+    if (validateForm() !== 0) {
       return;
     }
 
