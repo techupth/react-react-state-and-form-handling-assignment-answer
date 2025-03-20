@@ -22,6 +22,8 @@ function ProductForm() {
     }
     if (!price) {
       newErrors.price = "Price is required.";
+    } else if (price && price < 0) {
+      newErrors.price = "Price cannot be less than 0.";
     }
     if (!description) {
       newErrors.description = "Description is required.";
